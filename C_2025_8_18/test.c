@@ -1,26 +1,26 @@
 #include <stdio.h>
+
 //输出四个数的最大值
 int main()
 {
+    int i = 0;
     int arr[4] = {0};//初始化数组4个元素为0
-    // int n = 0;
-    for(int i = 0;i < 4;i++)
+    int tmp = 0;
+    
+    for(i = 0;i < 4;i++)
     {
         scanf("%d",&arr[i]);
         
     }
 
-    int max = arr[0];
-    int i = 1;
-    while(i<4)
+    for(i = 0;i < 4;i++)
     {
-        if(arr[i] > max)
+        if(tmp < arr[i])
         {
-            max = arr[i];
-            i++;
+            tmp = arr[i];
         }
-        i++;
     }
-    printf("%d\n",max);
+
+    printf("%d\n",tmp);
     return 0;
 }
