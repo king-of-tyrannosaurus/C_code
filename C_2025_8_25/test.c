@@ -1,10 +1,9 @@
 #include <stdio.h>
 
-//do..while循环
+//do while循环
 int main()
 {
     int i = 0;
-    
     do
     {
         if(i == 5)
